@@ -1,2 +1,30 @@
-<h1>Bids#index</h1>
-<p>Find me in app/views/bids/index.html.erb</p>
+
+<div class="container-fluid col-md-10 col-md-offset-1" id="postbody">
+
+<h2 class="text-center">Bids</h2>
+
+<%= @bids.each do |b| %>
+
+<div class = "row-fluid">
+
+<h4><%= b.maxbid %></h4>
+<h4> Maxbid : <%= b.maxbid %> </h4>
+
+
+
+</div>
+
+<br></br>
+<% end %>
+
+<br></br>
+</div>
+<div class="footer">
+	<%= link_to 'NEW BID', new_bid_path, class: "btn btn-primary btn-block" %>
+</div>
+<br></br>
+
+
+
+
+

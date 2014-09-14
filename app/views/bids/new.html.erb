@@ -1,0 +1,17 @@
+<div class="container-fluid col-md-8 col-md-offset-2">
+
+
+
+
+<%= form_for (@bid) do |b| %>
+	<%= b.text_area :location, label:'location' %><br />
+	<%= b.text_area  :date, label:'date' %><br />
+	<%= b.text_field :time, label:'time' %> <br />
+	<%= b.text_field :maxbid, label:'max bid' %> <br />
+	<%= b.submit 'Submit', class: "btn btn-primary btn-block" %>
+	
+
+
+<% end %>
+
+</div>
