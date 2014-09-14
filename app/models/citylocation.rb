@@ -10,7 +10,7 @@ class Citylocation < ActiveRecord::Base
 		response = HTTParty.get search_url, auth
 
 		response.parsed_response["products"]
-	end
-end
+  end
+	
 
 end
