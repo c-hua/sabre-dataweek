@@ -2,12 +2,12 @@
 
 one:
   location: MyString
-  date: 2014-09-13 17:33:22
-  time: 2014-09-13 17:33:22
-  maxbid: 1
+  date: 2014-09-13 17:35:13
+  time: 2014-09-13 17:35:13
+  maxbid: 1.5
 
 two:
   location: MyString
-  date: 2014-09-13 17:33:22
-  time: 2014-09-13 17:33:22
-  maxbid: 1
+  date: 2014-09-13 17:35:13
+  time: 2014-09-13 17:35:13
+  maxbid: 1.5

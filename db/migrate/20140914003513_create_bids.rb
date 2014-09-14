@@ -4,7 +4,7 @@ class CreateBids < ActiveRecord::Migration
       t.string :location
       t.datetime :date
       t.datetime :time
-      t.integer :maxbid
+      t.float :maxbid
 
       t.timestamps
     end
