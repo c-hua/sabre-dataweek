@@ -16,15 +16,56 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'foundation-rails'
+gem 'angularjs-rails'
+
+gem 'rails_12factor'
+
+gem 'json'
+gem 'devise'
+gem 'simple_form'
+gem 'js-routes'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'will_paginate', '~> 3.0'
+gem 'gravatar_image_tag'
+gem 'active_model_serializers'
+gem 'font-awesome-rails'
+gem 'prerender_rails'
+gem 'acts_as_commentable', '3.0.1'
+gem 'acts_as_commentable_with_threading'
+gem 'acts_as_votable', '~> 0.10.0'
+gem 'httparty'
+gem 'nokogiri'
+
+group :test do
+  gem 'shoulda'
+  gem 'factory_girl_rails'
+  gem 'poltergeist'
+  gem 'selenium-webdriver'
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'database_cleaner'
+  gem "spork-rails"
+  gem 'guard-spork'
+  gem 'jasmine'
+end
+
+group :development, :test do
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem "pry"
+end
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+
+gem 'figaro'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'spring'
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
