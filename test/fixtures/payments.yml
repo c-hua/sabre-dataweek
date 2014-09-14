@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  creditcard: 1
+  expdate: 2014-09-13 17:35:54
+  name: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+
+two:
+  creditcard: 1
+  expdate: 2014-09-13 17:35:54
+  name: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
