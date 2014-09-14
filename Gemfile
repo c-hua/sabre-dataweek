@@ -17,7 +17,8 @@ gem 'sabre_dev_studio'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'foundation-rails'
+gem 'bootstrap-rails'
+gem 'twitter-bootstrap-rails'
 gem 'angularjs-rails'
 
 gem 'rails_12factor'
