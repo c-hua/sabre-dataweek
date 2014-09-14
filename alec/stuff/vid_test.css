@@ -1,0 +1,35 @@
+video#bgvid {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background: url(placeholder1.jpg) no-repeat;
+background-size: cover;
+}
+
+.navbar {
+	font-size: 18px;
+	background-color: #4DB8FF;
+}
+
+.container {
+	background-color: #4DB8FF;
+	margin: 0px;
+	margin-right: 0px;
+}
+
+.container a {
+	color: white;
+}
+
+#logo {
+	padding-right: 15px;
+}
+
+.main_wrapper {
+	background-color: white;
+	margin: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}

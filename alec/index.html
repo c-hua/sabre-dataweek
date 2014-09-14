@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		span {
+			font: 150%/100% "Lucida Grande", Arial, sans-serif;
+			font-weight: bold;
+		}
+	</style>
+
+</head>
+<body>
+	<video autoplay loop muted poster="placeholder1.jpg" id="bgvid">
+      <source src="background_video.mp4" type="video/mp4">
+    </video>
+	<div style="text-align:center">
+		<img src="logo_transparent.png" width="500px" style="margin-bottom:30px; margin-top:50px;">
+
+		<br/>
+		<form class="pure-form">
+			<span style="margin-bottom:20px; margin-top:30px; color:white;">Take a trip to... <br/><input type="text" name="word" style="margin-top:30px;"></span>
+		</form>
+
+		<br/>
+
+		<section class="container">
+		    <div class="switch">
+		      <input type="radio" class="switch-input" name="view" value="RT" id="week" checked>
+		      <label for="week" class="switch-label switch-label-off">Round Trip</label>
+		      <input type="radio" class="switch-input" name="view" value="OW" id="month">
+		      <label for="month" class="switch-label switch-label-on">One Way</label>
+		      <span class="switch-selection"></span>
+		    </div>
+
+		    <div class="switch switch-blue">
+		      <input type="radio" class="switch-input" name="view2" value="week2" id="week2" checked>
+		      <label for="week2" class="switch-label switch-label-off">Weekend</label>
+		      <input type="radio" class="switch-input" name="view2" value="month2" id="month2">
+		      <label for="month2" class="switch-label switch-label-on">Whenever</label>
+		      <span class="switch-selection"></span>
+		    </div>
+		</section>
+
+
+		<a class="pure-button pure-button-primary" href="#"><i class="fa fa-paper-plane"></i> Go!</a>
+	</div>
+</body>
+</html>
