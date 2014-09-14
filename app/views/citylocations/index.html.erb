@@ -6,8 +6,11 @@
 
 					<% @citylocations.each do |c| %>
 						<li>
+							<%= c['fares'] %>
+							<%= c['fares']['origin'] %>
+							<%= c['fares']['origin']['destination'] %>
 							<dd>
-						    <a href="#product<%= p['id'] %>"><center><%= image_tag p['image']['sizes']['IPhone']['url'] %></center></a>
+						    <!-- <a href="#product<%= p['id'] %>"><center><%= image_tag p['image']['sizes']['IPhone']['url'] %></center></a>
 						    <div id="product<%= p['id'] %>" class="content">
 						      <h5><%= p['name'] %></h5>
 									<p>Original Price: <%= p['priceLabel'] %><br>
@@ -20,7 +23,7 @@
 
 										<div id="p<%=p['id']%>" class="reveal-modal small" data-reveal>
 										  <h2><%= p['name']%></h2>
-										  
+										   -->
 										  
 										</div>
 										
