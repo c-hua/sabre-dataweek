@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: runaway_production
-  username: runaway
-  password: <%= ENV['RUNAWAY_DATABASE_PASSWORD'] %>
+  username: 
+  password: 
