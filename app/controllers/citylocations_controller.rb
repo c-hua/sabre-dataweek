@@ -1,17 +1,62 @@
 class CitylocationsController < ApplicationController
+  respond_to :json, :html
 
   def index
     @citylocations = Citylocation.find_by_sql('SELECT * FROM citylocations ORDER BY created_at DESC')
-
+    respond_with @citylocations
   end
 
   def compindex
     @citylocations = Citylocation.find_by_sql('SELECT * FROM citylocations ORDER BY created_at DESC')
+    respond_with @citylocations
   end
 
+  def show
+    @citylocation= Citylocation.find(params[:id])
+  end
 
-  def citylocations_params
-    params.require(:citylocations).permit(:airport, :month, :maxprice, :minprice, :priceamount)
+  def new 
+    @citylocation = Citylocation.new
+  end
+
+  def create
+    @citylocation = Citylocation.new(citylocation_params)
+    
+
+    if @citylocation.save
+      respond_to do |format|
+        format.html { redirect_to citylocations_path }
+        format.json { render json: @citylocation, status: :created }
+      end
+    else
+      respond_to do |format|
+        format.html { render 'new' }
+        format.json { render json: @citylocation.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def edit
+    @citylocation = Citylocation.find(params[:id])
+  end
+
+  def update
+    @citylocation = Citylocation.find(params[:id])
+    if @citylocation.update(citylocation_params)
+      redirect_to citylocations_compindex_path
+    else 
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @citylocation = Citylocation.find(params[:id])
+    @citylocation.destroy
+    redirect_to citylocation_path
+  end
+
+  def citylocation_params
+    params.require(:citylocation).permit(:airport, :month, :maxprice, :minprice, :priceamount, :origin, :destination, :lengthofstay, :maxfare)
   end
 
   private

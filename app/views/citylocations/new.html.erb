@@ -1,0 +1,19 @@
+<div class="container-fluid col-md-8 col-md-offset-2">
+
+
+
+
+<%= bootstrap_form_for (@citylocation) do |c| %>
+	<%= c.text_area :airport, label:'airport' %><br />
+	<%= c.text_area  :month, label:'month' %><br />
+	<%= c.text_field :priceamount, label:'priceamount' %> <br />
+	<%= c.text_field :destination, label:'destination' %> <br />
+	<%= c.text_field :lengthofstay, label:'lengthofstay' %> <br />
+	<%= c.text_field :maxfare, label:'maxfare' %> <br />
+	<%= c.submit 'Submit', class: "btn btn-primary btn-block" %>
+	
+
+
+<% end %>
+
+</div>

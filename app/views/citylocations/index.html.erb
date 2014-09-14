@@ -1,37 +1,37 @@
-				
 
-				<dl class="accordion" data-accordion>
-					<div>
-					<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+<div class="container-fluid col-md-10 col-md-offset-1" id="postbody">
 
-					<% @citylocations.each do |c| %>
-						<li>
-							<%= c['fares'] %>
-							<%= c['fares']['origin'] %>
-							<%= c['fares']['origin']['destination'] %>
-							<dd>
-						    <!-- <a href="#product<%= p['id'] %>"><center><%= image_tag p['image']['sizes']['IPhone']['url'] %></center></a>
-						    <div id="product<%= p['id'] %>" class="content">
-						      <h5><%= p['name'] %></h5>
-									<p>Original Price: <%= p['priceLabel'] %><br>
-									<p>Sale Price: <%= p['salePriceLabel'] %><br>
-									<p><%= percent_off((p['priceLabel'].gsub(/[^\d\.]/, '').to_f), (p['salePriceLabel'].gsub(/[^\d\.]/, '').to_f)).round %>% Savings<br><br>
-									<h5><center><%= link_to "GO!", p['clickUrl'] %></center></h5>	
-										
-									
-										<a href="#" data-reveal-id="p<%=p['id']%>">Will be a double tap</a>
+<h2 class="text-center">City Location</h2>
 
-										<div id="p<%=p['id']%>" class="reveal-modal small" data-reveal>
-										  <h2><%= p['name']%></h2>
-										   -->
-										  
-										</div>
-										
+<% @citylocations.each do |c| %>
 
-						    </div>
-					  	</dd>
-						</li>
-					<% end %>
-					</ul>
-					</div>
-				</dl>
+<div class = "row-fluid">
+
+<h4> Airport: <%= c.airport %></h4>
+<h4> Month: <%= c.month %> </h4>
+<h4> Max price: <%= c.maxprice %> </h4>
+<h4> Min price: <%= c.minprice %> </h4>
+<h4> Price amount: <%= c.priceamount %> </h4>
+<h4> Origin: <%= c.origin %> </h4>
+<h4> Destination: <%= c.destination %> </h4>
+<h4> Length of stay: <%= c.lengthofstay %> </h4>
+<h4> Max fare: <%= c.maxfare %> </h4>
+
+
+
+</div>
+
+
+<% end %>
+
+<br></br>
+</div>
+<div class="footer">
+	<%= link_to 'NEW CITY LOCATION', new_citylocation_path, class: "btn btn-primary btn-block" %>
+</div>
+<br></br>
+
+
+
+
+

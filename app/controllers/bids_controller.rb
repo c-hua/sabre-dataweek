@@ -21,8 +21,7 @@ class BidsController < ApplicationController
 
   def create
     @bid = Bid.new(bid_params)
-    bid_params[:date] = Date.strptime(order_params[:scheduled_date],
-                                                '%m/%d/%Y %I:%M %p')
+    
 
     if @bid.save
       respond_to do |format|

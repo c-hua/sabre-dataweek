@@ -25,6 +25,11 @@
 <% else %>
   <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+
+  <%= link_to 'NEW CITY LOCATION', new_citylocation_path, class: "btn btn-primary btn-block" %>
+  <%= link_to 'NEW BID', new_bid_path, class: "btn btn-primary btn-block" %>
+
+
 <% end %>
 
 </body>
