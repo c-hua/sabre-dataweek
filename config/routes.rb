@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'bids/index'
+  resources :bids
+  resources :citylocations
+  resources :payments
 
-  get 'citylocations/index'
-
-  get 'payments/index'
+  root 'citylocations#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

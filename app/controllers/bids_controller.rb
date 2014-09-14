@@ -1,11 +1,17 @@
 class BidsController < ApplicationController
-  load_and_authorize_resource
+
   def index
   	@bids = Bid.find_by_sql('SELECT * FROM bids ORDER BY created_at DESC')
+  	 respond_to do |format|
+      	format.html # index.html.erb
+      	format.json { render json: @bids }
   end
 
   def compindex
   	@bids = Bid.find_by_sql('SELECT * FROM bids ORDER BY created_at DESC')
+  	 respond_to do |format|
+      	format.html # index.html.erb
+      	format.json { render json: @bids }
   end
 
   def show
@@ -45,6 +51,15 @@ class BidsController < ApplicationController
     @bid.destroy
     redirect_to bids_path
   end
+
+  def timecost
+  	@maxbid = cookies[:maxbid]
+  	# if @userbid <= @maxbid
+  		# render 'notification'
+  	# end
+  end
+
+  def 
 
   
   def bid_params
