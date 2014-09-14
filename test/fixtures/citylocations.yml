@@ -2,14 +2,14 @@
 
 one:
   airport: MyString
-  month: 2014-09-13 17:36:23
+  month: 2014-09-13 17:38:31
   maxprice: 1.5
   minprice: 1.5
   priceamount: 1.5
 
 two:
   airport: MyString
-  month: 2014-09-13 17:36:23
+  month: 2014-09-13 17:38:31
   maxprice: 1.5
   minprice: 1.5
   priceamount: 1.5

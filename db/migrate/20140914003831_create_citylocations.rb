@@ -1,6 +1,6 @@
-class CreateCities < ActiveRecord::Migration
+class CreateCitylocations < ActiveRecord::Migration
   def change
-    create_table :cities do |t|
+    create_table :citylocations do |t|
       t.string :airport
       t.datetime :month
       t.float :maxprice
