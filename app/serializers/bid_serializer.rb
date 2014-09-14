@@ -1,3 +1,3 @@
 class BidSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :location, :date, :time, :maxbid
 end
