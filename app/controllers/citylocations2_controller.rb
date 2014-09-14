@@ -66,7 +66,7 @@ class CitylocationsController < ApplicationController
         format.html # index.html.erb
         format.json { render json: @citylocations }
   end
-end
+  end
   
   def citylocation_params
     params.require(:citylocation).permit(:airport, :month, :maxprice, :minprice, :priceamount)
