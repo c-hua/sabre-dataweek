@@ -1,3 +1,3 @@
 class CitylocationSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :airport, :month, :maxprice, :minprice, :priceamount
 end

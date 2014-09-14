@@ -1,3 +1,3 @@
 class PaymentSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :creditcard, :expdate, :name, :address, :city, :state, :zip
 end
