@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/vid_test.css">
+    <script>
+      $(function() {
+        $( ".horizontal_slider" ).slider();
+        $( ".vertical_slider" ).slider({ orientation: "vertical" });
+      });
+    </script>
+    <script src="dynamo.js"></script>
+  </head>
+  <body>
+    <header class="navbar navbar-static-top bs-docs-nav">
+      <div class="container">
+        <div class="navbar-header">
+            <nav class="collapse navbar-collapse bs-navbar-collapse"> 
+              <ul class="nav navbar-nav"> 
+              <li id="logo"><img src="inverse.jpg" width="200px"></li>
+              <li><a href="#">About Runaway</a></li> 
+              <li><a href="#">Our Team</a></li> 
+              <li><a href="#">Contact Us</a></li> 
+              </ul> 
+            </nav> 
+        </div>
+      <div>
+    </header>
+    <video autoplay loop muted poster="placeholder1.jpg" id="bgvid">
+      <source src="background_video.mp4" type="video/mp4">
+    </video>
+    <div class="main_wrapper">
+      <h2>Here are the prices for airfare to the Carribean over time:</h2>
+      <div>
+        <img src="Hackathon_Runaway4.png">
+        <div class="vertical_slider"></div>
+      </div>
+      <div class="horizontal_slider"></div>
+      <h4>Alert me when a flight to the Carribean opens up at or below $<span id="vertical_slider_value">700</span> within <span id="horizontal_slider_value">0</span> days.</h4>
+      <button class="btn-lg">Runaway!</button>
+    </div>
+  </body>
+</html>
